@@ -1,7 +1,9 @@
 MPG Regression
 ==============
 
-1 - Which variables/coe􀀷cients provided a non-random amount of variance to the mpg values in the dataset?
+
+
+1 - Which variables/coeffcients provided a non-random amount of variance to the mpg values in the dataset?
 
 Linear regression models were created and analyzed for the following combinations of 
 independent variables:
@@ -90,6 +92,22 @@ F-statistic:  34.7 on 3 and 46 DF,  p-value: 7.089e-12
 From the three linear regression models shown above, it is clear that the two variables which have a non-random amount of variance on the mpg values in the dataset are vehicle.length and ground.clearance, both of which have near-zero p-values in all the models explored. It is worth pointing out that the p-value of the intercept in all the models is very close to zero, indicating that the intercept is statistically significant which, in turn, means that there are other variables and factors that contribute to the variation in mpg rating that have not been included in the models. 
 
 
+Suummary Statistics of quantitative variables
+=============================================
+
+Mean
+  vehicle.length   vehicle.weight    spoiler.angle ground.clearance 
+        15.01961       6154.14740         57.11654         12.71416 
+Median
+  vehicle.length   vehicle.weight    spoiler.angle ground.clearance 
+        14.60441       5928.68989         58.54649         12.98081 
+Variance
+  vehicle.length   vehicle.weight    spoiler.angle ground.clearance 
+    4.124538e+00     3.408059e+06     3.826526e+02     6.408586e+00 
+Standard Deviation
+  vehicle.length   vehicle.weight    spoiler.angle ground.clearance 
+        2.030896      1846.092817        19.561509         2.531518 
+
 2 - Is the slope of the linear model considered to be zero? Why or why not?
 
 In all of the linear explored linear models, for the two independent variables which have a non-random amount of variance on mpg, there was a significant linear relationship between the two variables and mpg. The coefficients of the two variables were the following:
@@ -108,6 +126,8 @@ ground.clearance: 3.522e+00 = 3.522
 
 As such, it can be concluded that the slope of the linear model cannot be considered to be zero.
 
+
+
 3 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 Following are the Coefficient of Determination values, Multiple R-squared and Adjusted R-squared, for all three possible combinations of independent variables:
@@ -116,7 +136,7 @@ Following are the Coefficient of Determination values, Multiple R-squared and Ad
 . Combination 2: Multiple R-squared:  0.7019,	Adjusted R-squared:  0.6621 
 . Combination 3: Multiple R-squared:  0.6936,	Adjusted R-squared:  0.6736 
 
-The combination with the best coefficients of determination is Combination 1, in which 71.49% of the variability in the mpg measures are explained by the independent variables. A confirmation of this fact is that the adjusted R-squared value is only slightly lower than R-squared, indicating that the model can accurately predict 68.25% of values of the dependent variable given the values of the independent variables. It is worth noting that, as mentioned earlier, with respect to the significance of the y-intercept, the fact that the adjusted R-squared value is less than the R-squared value indicates that there are some pertinent variables that have not been included in the models.
+The combination with the best coefficients of determination is Combination 1, in which 71.49% of the variability in the mpg measures are explained by the independent variables. A confirmation of this fact is that the adjusted R-squared value is only slightly lower than R-squared, indicating that the model can accurately predict 68.25% of values of the dependent variable given the values of the independent variables. It is worth noting that, as mentioned earlier, with respect to the significance of the y-intercept, the fact that the adjusted R-squared value is less than the R-squared value indicates that there are some pertinent variables that have not been included in the models. As such, the linear model does predict mpg of the MechaCar prototypes reasonably effectively.
 
 
 Suspension Coil Summary
@@ -154,7 +174,44 @@ mean of x
  According to the results of the one-sample t-test, the desired mean of 1,500 pounds per square inch falls inside the 95% confidence interval. As well, the high p-value, 0.51, shows that we must fail to reject the null hypothesis and conclude that the sample mean is indeed equal to the desired mean of 1,500 pounds per square inch.
  
  
- Design Your Own Study
- =====================
+Design Your Own Study
+=====================
  
- 
+To conduct a statistical study that can quantify how the MechaCar outperforms the competition, I would use the following metrics, questions, null and alternative hypotheses, and statistical tests to determine how competitive a car of interest in the market compared with cars from the same class.
+
+Metrics
+-------
+
+Some metrics that would be of interest to a consumer are the following:
+- Cost of purchase. 
+    A car purchase is a considerable expenditure with can have a significant impact on people's budgets.
+- Cost of ownership, which can be broken down into the following costs:
+    - Cost of fuel (miles per gallon).
+        Depending on how much driving a person does, the cost of fuel can significantly affect people's disposable income.
+    - Cost of maintenance
+        Just like the cost of fuel, the cost of maintenance can significantly affect people's disposable income. It is more significant than the cost of fuel because maintenace has to be done on a periodic basis regardless of how much driving a person does.
+
+    
+Questions
+---------
+- How does the cost of purchase compare to the average cost of purchase of cars from the same class? 
+- How does the cost of fuel compare to the average cost of fuel of cars from the same class? 
+- How does the cost of maintenance compare to the average cost of maintenance from the same class? 
+
+Null Hypotheses
+---------------
+- There is no appreciable difference between the cost of purchase of the car of interest and the average cost of purchase of cars from the same class.
+- There is no appreciable difference between the cost of ownership of the car of interest and the average cost of ownership of cars from the same class.
+
+Alternative Hypotheses
+----------------------
+- There is an appreciable difference between the purchase price of the car of interest and the average price of cars from the same class.
+- There is an appreciable difference between the cost of ownership of the car of interest and the average cost of ownership of cars from the same class.
+
+Statistical tests
+-----------------
+- Use a one-sample t-test to compare the prices of a sample of cars from the model of interest with the average price of cars from the same class.
+- Use a one-sample t-test to compare the average fuel consumption of a sample of cars from the model of interest with the average cost of fuel of cars from the same class
+- Use a one-sample t-test to compare the average cost of maintence of a sample of cars from the model of interest with the average cost of maintenance of cars from the same class.
+
+
