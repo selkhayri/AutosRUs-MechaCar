@@ -92,7 +92,7 @@ F-statistic:  34.7 on 3 and 46 DF,  p-value: 7.089e-12
 From the three linear regression models shown above, it is clear that the two variables which have a non-random amount of variance on the mpg values in the dataset are vehicle.length and ground.clearance, both of which have near-zero p-values in all the models explored. It is worth pointing out that the p-value of the intercept in all the models is very close to zero, indicating that the intercept is statistically significant which, in turn, means that there are other variables and factors that contribute to the variation in mpg rating that have not been included in the models. 
 
 
-Suummary Statistics of quantitative variables
+Summary Statistics of quantitative variables
 =============================================
 
 Mean
