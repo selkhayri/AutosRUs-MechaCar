@@ -14,7 +14,8 @@ The summary results of the the linear regression models generated above are as f
 
 <pre>
 Call:
-lm(formula = mpg ~ vehicle.length + vehicle.weight + spoiler.angle + ground.clearance + AWD, data = mech_data, na.action = na.omit)
+lm(formula = mpg ~ vehicle.length + vehicle.weight + spoiler.angle +
+ground.clearance + AWD, data = mech_data, na.action = na.omit)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
@@ -155,14 +156,14 @@ The summary statistics for the suspension coil data are as follows:
 
 ### Summary Statistics - Individual lots
 <pre>  
-Lot1 --                         Mean:  1500.01821019726         Median:  1500.20574462939       Variance:  1.1460236797714      Standard Dev:  1.07052495523056
-Lot2 --                         Mean:  1499.57090421265         Median:  1498.87294562232       Variance:  10.1315105640408     Standard Dev:  3.18300338737501
-Lot3 --                         Mean:  1499.00394679216         Median:  1497.98123296641       Variance:  220.010563245962     Standard Dev:  14.8327530568658
+Lot1 --   Mean:  1500.01821019726   Median:  1500.20574462939   Variance:  1.1460236797714   Standard Dev:  1.07052495523056
+Lot2 --   Mean:  1499.57090421265   Median:  1498.87294562232   Variance:  10.1315105640408   Standard Dev:  3.18300338737501
+Lot3 --   Mean:  1499.00394679216   Median:  1497.98123296641   Variance:  220.010563245962   Standard Dev:  14.8327530568658
 </pre>
 
 ### Summary Statistics - Combined
 <pre>
-All --                          Mean:  1499.53102040069         Median:  1499.7465323533        Variance:  76.2345928674917     Standard Dev:  8.73124234387591
+All --   Mean:  1499.53102040069   Median:  1499.7465323533   Variance:  76.2345928674917   Standard Dev:  8.73124234387591
 </pre>
 
 ### Conclusion
